@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5001"; // Ensure this matches your backend port
+const API_BASE_URL = "https://tfnsw-realtime.onrender.com/"; // Ensure this matches your backend port
 
 // Function to fetch departures
 export const fetchDepartures = async (stationId) => {
