@@ -1,5 +1,4 @@
-```
-# NSW Transport Live Departure Board
+## NSW Transport Live Departure Board
 
 A real-time public transport departure board application for New South Wales, Australia, allowing users to view live departure information for trains, buses, light rail, ferries, and coaches. The application features a dynamic search for stops/stations, real-time updates, and an intuitive user interface.
 
@@ -22,31 +21,31 @@ A real-time public transport departure board application for New South Wales, Au
 
 ## Features
 
-* **Multi-Mode Departure Boards**: View live departure information for Trains, Buses, Light Rail, Ferries, and Coaches.
-* **Real-time Updates**: Departures automatically refresh every 30 seconds for up-to-date information.
-* **Stop/Station Search**: Easily find your desired bus stop or train/light rail/ferry/coach station by name or ID.
-* **Dynamic Information**: Displays scheduled and estimated departure times, destination, platform, and, for buses, real-time occupancy.
-* **User-Friendly Interface**: Clean and intuitive design with mode-specific branding (e.g., orange for trains, blue for light rail/ferries).
-* **Pre-compiled Static Data**: Train station data is pre-compiled for faster local searching.
+- **Multi-Mode Departure Boards**: View live departure information for Trains, Buses, Light Rail, Ferries, and Coaches.
+- **Real-time Updates**: Departures automatically refresh every 30 seconds for up-to-date information.
+- **Stop/Station Search**: Easily find your desired bus stop or train/light rail/ferry/coach station by name or ID.
+- **Dynamic Information**: Displays scheduled and estimated departure times, destination, platform, and, for buses, real-time occupancy.
+- **User-Friendly Interface**: Clean and intuitive design with mode-specific branding (e.g., orange for trains, blue for light rail/ferries).
+- **Pre-compiled Static Data**: Train station data is pre-compiled for faster local searching.
 
 ## Technologies Used
 
 **Backend (Node.js/Express):**
 
-* [**Node.js**](https://nodejs.org/): JavaScript runtime environment.
-* [**Express.js**](https://expressjs.com/): Fast, unopinionated, minimalist web framework for Node.js.
-* [**Axios**](https://axios-http.com/): Promise-based HTTP client for the browser and Node.js.
-* [**dotenv**](https://www.npmjs.com/package/dotenv): Loads environment variables from a `.env` file.
-* [**cors**](https://www.npmjs.com/package/cors): Node.js package for providing a Connect/Express middleware that can be used to enable CORS.
-* [**csv-parser**](https://csv.js.org/csv-parser/): Streaming CSV parser.
+- [**Node.js**](https://nodejs.org/): JavaScript runtime environment.
+- [**Express.js**](https://expressjs.com/): Fast, unopinionated, minimalist web framework for Node.js.
+- [**Axios**](https://axios-http.com/): Promise-based HTTP client for the browser and Node.js.
+- [**dotenv**](https://www.npmjs.com/package/dotenv): Loads environment variables from a `.env` file.
+- [**cors**](https://www.npmjs.com/package/cors): Node.js package for providing a Connect/Express middleware that can be used to enable CORS.
+- [**csv-parser**](https://csv.js.org/csv-parser/): Streaming CSV parser.
 
 **Frontend (React/Vite):**
 
-* [**React**](https://react.dev/): JavaScript library for building user interfaces.
-* [**Vite**](https://vitejs.dev/): Next-generation frontend tooling for fast development.
-* [**Axios**](https://axios-http.com/): For making HTTP requests to the backend.
-* [**React Icons**](https://react-icons.github.io/): Collection of popular icons as React components.
-* **CSS3**: For styling and layout.
+- [**React**](https://react.dev/): JavaScript library for building user interfaces.
+- [**Vite**](https://vitejs.dev/): Next-generation frontend tooling for fast development.
+- [**Axios**](https://axios-http.com/): For making HTTP requests to the backend.
+- [**React Icons**](https://react-icons.github.io/): Collection of popular icons as React components.
+- **CSS3**: For styling and layout.
 
 ## Project Structure
 
@@ -97,12 +96,13 @@ Follow these instructions to set up and run the project locally.
 
 ### Prerequisites
 
-* Node.js (v18 or higher recommended)
-* npm (comes with Node.js) or yarn
+- Node.js (v18 or higher recommended)
+- npm (comes with Node.js) or yarn
 
 ### Environment Variables
 
 You need to obtain an API key from Transport for NSW Open Data.
+
 1.  Visit the [Transport for NSW Open Data website](https://opendata.transport.nsw.gov.au/).
 2.  Sign up for an account and obtain an API key.
 
@@ -115,7 +115,7 @@ Create a `.env` file in the `backend` directory with your API key:
 TFN_API_KEY="your_tfn_api_key_here"
 PORT=5001 # Optional: specify a port for the backend, default is 10000 if not set
 
-````
+```
 
 ### Installation
 
@@ -148,7 +148,7 @@ From the `backend` directory, run the compilation script:
 ```bash
 cd backend
 node compileStationData.js
-````
+```
 
 This script will:
 
