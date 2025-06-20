@@ -6,7 +6,7 @@ const cors = require("cors");
 const axios = require("axios");
 
 const app = express();
-const PORT = process.env.PORT || 5001; // Use port 5001 or whatever is available
+const PORT = process.env.PORT || 10000; // Use port 5001 or whatever is available
 
 // Enable CORS for all origins
 app.use(cors());
