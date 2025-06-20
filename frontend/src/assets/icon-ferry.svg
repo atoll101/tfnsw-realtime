@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 447 447" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Layer1">
+        <g transform="matrix(1.69379,0,0,1.80663,-212.348,-156.424)">
+            <path d="M257.127,86.513C329.881,86.513 388.948,141.878 388.948,210.072C388.948,278.267 329.881,333.632 257.127,333.632C184.373,333.632 125.307,278.267 125.307,210.072C125.307,141.878 184.373,86.513 257.127,86.513ZM257.127,106.817C317.925,106.817 367.286,153.084 367.286,210.072C367.286,267.061 317.925,313.328 257.127,313.328C196.329,313.328 146.969,267.061 146.969,210.072C146.969,153.084 196.329,106.817 257.127,106.817Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(1.484,0,0,1.53822,-133.878,-122.14)">
+            <ellipse cx="241.265" cy="224.229" rx="126.755" ry="121.519" style="fill:rgb(46,156,6);"/>
+        </g>
+        <g transform="matrix(1.26847,0,0,1.1155,-93.8507,159.197)">
+            <text x="172.459px" y="162.256px" style="font-family:Helvetica;font-size:278.21px;font-weight:700;fill:white;">F</text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,331 @@
+/* --- TrainDepartures specific styles --- */
+
+/* Wrapper for the initial station selection screen */
+.train-initial-screen-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* The main white box on the initial screen */
+.train-initial-prompt {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.train-initial-prompt h2 {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.train-initial-prompt p {
+  font-size: 1.1em;
+  color: #777;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Container for the search input and the new station list */
+.train-search-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.train-search-container label {
+  font-weight: bold;
+  color: #555;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.train-search-container input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 1em;
+}
+.train-search-container input[type="text"]:focus {
+  border-color: #e55c26;
+  outline: none;
+}
+
+/* --- NEW: Styles for the scrollable station list --- */
+.train-station-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  /* Define size and scrolling */
+  max-height: 40vh; /* Responsive height, max 40% of viewport height */
+  overflow-y: auto; /* Enable vertical scrolling only when needed */
+  text-align: left;
+}
+
+.train-station-list li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  font-size: 1em;
+  color: #333;
+}
+
+.train-station-list li:last-child {
+  border-bottom: none;
+}
+
+.train-station-list li:hover {
+  background-color: #eef2f5;
+  color: #333;
+}
+
+/* Style for the 'no results' message inside the list */
+.train-station-list li.no-results-message {
+  color: #888;
+  font-style: italic;
+  cursor: default;
+  background-color: #fafafa;
+}
+.train-station-list li.no-results-message:hover {
+  background-color: #fafafa;
+}
+
+/* --- Timetable Screen Styles --- */
+
+.train-full-screen-view {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.train-timetable-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.settings-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #e0e0e0;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-button:hover {
+  background-color: #d0d0d0;
+  color: #333;
+}
+
+/* Modal specific controls styling */
+.modal-station-selection-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.modal-station-selection-controls h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.main-board-message {
+  font-size: 1.3em;
+  color: #777;
+  margin-top: 100px;
+}
+
+/* --- Train Departure Board (Live Transit Image Style) --- */
+.train-departure-board-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  color: #333;
+  font-family: new-frank, ui-sans-serif, system-ui, sans-serif;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+.train-board-header {
+  background-color: #e55c26;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px 5px 15px;
+  flex-shrink: 0;
+}
+
+.train-board-header .train-header-departures {
+  font-size: 2.5em;
+  flex-grow: 1;
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+.train-board-header .train-header-time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.train-board-header .train-header-time-label {
+  font-size: 1em;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.train-board-header .train-header-current-time {
+  font-size: 1.7em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.train-board-column-headers {
+  display: flex;
+  padding: 15px 15px 3px 15px;
+  background-color: #ffffff;
+  font-size: 1.1em;
+  color: #000000;
+  flex-shrink: 0;
+}
+
+.train-column-border-line {
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: #000000;
+  margin: 0 auto 5px auto;
+  flex-shrink: 0;
+}
+
+.train-board-column-headers .service-to {
+  flex: 0 0 65%; /* Time + Service Info */
+  text-align: left;
+}
+.train-board-column-headers .departs {
+  flex: 0 0 25%;
+  text-align: left;
+}
+.train-board-column-headers .plat {
+  flex: 0 0 10%;
+  text-align: center;
+}
+
+.train-departure-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  border-radius: 0 0 4px 4px;
+  padding: 5px 15px;
+  margin-top: 1px;
+}
+
+.train-departure-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 0.95em;
+  color: #000000;
+  line-height: 1.2;
+  margin-left: -2px;
+}
+.train-departure-item:nth-child(odd) {
+  background-color: #fddbcb;
+}
+.train-departure-item:nth-child(even) {
+  background-color: #f8f8f8;
+}
+.train-departure-item p {
+  margin: 0;
+}
+
+.train-departure-item .service-time {
+  flex: 0 0 17.5%;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 2px;
+}
+
+.train-departure-item .service-info {
+  flex: 0 0 47.5%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+
+.train-departure-item .departs {
+  flex: 0 0 25%;
+  text-align: left;
+  font-weight: bold;
+}
+.train-departure-item .time-until {
+  color: #333;
+}
+.train-departure-item .time-until.delayed-time {
+  color: #e55c26;
+}
+
+.train-departure-item .plat-info {
+  flex: 0 0 10%;
+  text-align: center;
+  font-weight: normal;
+}
